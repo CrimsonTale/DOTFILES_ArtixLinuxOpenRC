@@ -48,6 +48,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+#pulseaudio
+pulseaudio &
+
+
 #compositor
 picom --experimental-backends -b &
 
@@ -74,10 +78,16 @@ xcape -e "Hyper_R=backslash" &
 
 sleep 1
 
+#java support
+export _JAVA_AWT_WM_NONREPARENTING=1 
+export AWT_TOOLKIT=MToolkit 
+wmname LG3D
+
 #loop
 while true; do
 	dwm >/dev/null 2>&1
-done
+done 
+
 
 #start dwm
 exec dwm
