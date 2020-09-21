@@ -144,7 +144,7 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 #vscode
-alias code="code-insiders"
+#alias code="code-insiders"
 
 #history
 alias h="history"
@@ -152,7 +152,10 @@ alias h="history"
 #neovim
 alias vim="nvim"
 
-neofetch --source ~/Wallpapers/wf_astronaut.jpg 
-figlet -f ~/.local/share/fonts/figlet-fonts/3d.flf "Hey Nesh" | lolcat
+#sudo make clean install
+alias smci="sudo make clean install"
+
+
+#figlet -f ~/.local/share/fonts/figlet-fonts/3d.flf "Hey Nesh" | lolcat
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
