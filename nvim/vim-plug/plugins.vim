@@ -37,7 +37,9 @@ Plug 'fatih/vim-go', { 'tag': '*' }
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 
 " Deoplete -Code Completion Engine
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -70,5 +72,8 @@ Plug 'tpope/vim-fugitive'
 " Tabs or Spaces?
 Plug 'tpope/vim-sleuth'
 Plug 'editorconfig/editorconfig-vim'
+
+" Distraction-free Writing
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
