@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH="/home/nesh/.local/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/nesh/.oh-my-zsh"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -155,7 +158,13 @@ alias vim="nvim"
 #sudo make clean install
 alias smci="sudo make clean install"
 
+# Shortcut to vim config
+alias vimconfig="cd ~/.config/nvim/"
 
-#figlet -f ~/.local/share/fonts/figlet-fonts/3d.flf "Hey Nesh" | lolcat
+#figlet -f ~/.local/share/fonts/figlet-fonts/3d.flf "bruh" | lolcat
+
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
