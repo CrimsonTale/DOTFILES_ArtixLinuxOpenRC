@@ -51,6 +51,9 @@ fi
 
 #pulseaudio
 pulseaudio &
+pulseaudio -k &
+pulseaudio --start &
+pulsemixer &
 
 #compositor
 picom --experimental-backends -b &
@@ -61,12 +64,14 @@ wal -R &
 sleep 1
 
 #wallpaper
-nitrogen --restore &
+#nitrogen --restore &
 
 #remap caps_lock to escape
 setxkbmap -option caps:swapescape &
 
 sleep 1
+
+xset r rate 300 50 &
 
 #java support
 export _JAVA_AWT_WM_NONREPARENTING=1 
