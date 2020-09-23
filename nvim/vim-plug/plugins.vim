@@ -58,6 +58,7 @@ Plug 'easymotion/vim-easymotion'
 
 " Airline – Info Tabline
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Conquer of Completion 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -75,5 +76,14 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Distraction-free Writing
 Plug 'junegunn/goyo.vim'
+
+" A Personal Wiki For Vim
+Plug 'vimwiki/vimwiki'
+
+" Git Integration
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 
 call plug#end()
