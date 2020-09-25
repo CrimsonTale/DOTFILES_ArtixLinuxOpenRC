@@ -1,0 +1,11 @@
+font:
+  normal:
+    family: FiraCode Nerd Font 
+    style: Medium 
+    
+window:
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+
